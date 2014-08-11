@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Twitter2.OAuthPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Twitter2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="WhiteSmoke">
+        <WebView x:Name="OAuthWebBrowser" HorizontalAlignment="Left" Height="533" Margin="41,56,0,0" VerticalAlignment="Top" Width="700" />
+        <TextBox BorderBrush="Black" x:Name="PinTextBox" Margin="869,516,0,220" Width="193" HorizontalAlignment="Left" IsEnabled="True" />
+        <Button x:ConnectionId='1' Foreground="Black" BorderBrush="Black" x:Name="AuthenticatePinButton" Content="Authenticate" Margin="1128,512,0,218" IsEnabled="True"                                     />
+        <TextBlock Name="steps" HorizontalAlignment="Left" Foreground="Black" FontSize="20" FontWeight="Bold" Height="30" Margin="851,116,0,0" TextWrapping="Wrap" Text="Steps:" VerticalAlignment="Top" Width="425"/>
+        <TextBlock Name="instructions" HorizontalAlignment="Left" Foreground="Black" FontSize="17" Height="282" Margin="851,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="425"/>
+        <ProgressRing Name="loadingring" Foreground="#FFC9C7C7" Width="70" Height="70" Margin="1142,588,124,80" />
+        <TextBlock Name="notstoringcredentials" FontSize="17" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Left" Height="37" Margin="41,651,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="1170"/>
+    </Grid>
+</Page>
+

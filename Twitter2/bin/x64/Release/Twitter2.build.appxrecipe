@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LIPMANPC</Machine>
+    <WindowsUser>JuanMiguel</WindowsUser>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\bin\x64\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\bin\x64\Release\JMTwitter.exe">
+      <PackagePath>JMTwitter.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\bin\x64\Release\JMTwitter.pdb">
+      <PackagePath>JMTwitter.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\packages\LinqToTwitter.2.1.05\lib\winrt45\LinqToTwitterRT.dll">
+      <PackagePath>LinqToTwitterRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\SQLite.WinRT\3.7.15.2\Redist\Retail\x64\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\connect.png">
+      <PackagePath>Assets\connect.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\connectSelected.png">
+      <PackagePath>Assets\connectSelected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\home.png">
+      <PackagePath>Assets\home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\homeSelected.png">
+      <PackagePath>Assets\homeSelected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\newTweet.png">
+      <PackagePath>Assets\newTweet.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\replyicon.png">
+      <PackagePath>Assets\replyicon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\Assets\loadingAnimation.gif">
+      <PackagePath>Assets\loadingAnimation.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\bin\x64\Release\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\bin\x64\Release\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\bin\x64\Release\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\bin\x64\Release\OAuthPage.xaml">
+      <PackagePath>OAuthPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\bin\x64\Release\TimeLinePage.xaml">
+      <PackagePath>TimeLinePage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\JuanMiguel\documents\visual studio 2012\Projects\Twitter2\Twitter2\bin\x64\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.VCLibs\11.0\">
+      <Name>Microsoft.VCLibs.110.00</Name>
+      <Version>11.0.50727.1</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.110.00, MinVersion = 11.0.50727.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.VCLibs\11.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.11.00.appx</AppxLocation>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.VCLibs\11.0\">
+      <Name>Microsoft.VCLibs.110.00</Name>
+      <Version>11.0.50727.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.110.00, MinVersion = 11.0.50727.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.VCLibs\11.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.11.00.appx</AppxLocation>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.VCLibs\11.0\">
+      <Name>Microsoft.VCLibs.110.00</Name>
+      <Version>11.0.50727.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.110.00, MinVersion = 11.0.50727.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.VCLibs\11.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.11.00.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

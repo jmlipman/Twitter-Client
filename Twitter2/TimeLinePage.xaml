@@ -1,0 +1,185 @@
+﻿<Page
+    x:Class="Twitter2.TimeLinePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Twitter2.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Page.DataContext>
+        <local:BackgroundConverter/>
+    </Page.DataContext>
+
+    <Page.Resources>
+        <local:DateConverter whatever="asd" x:Key="firstkey"></local:DateConverter>
+        <local:BackgroundConverter whatever="asd" x:Key="secondkey"></local:BackgroundConverter>
+        <local:TweetTextConverter whatever="asd" x:Key="thirdkey"></local:TweetTextConverter>
+    </Page.Resources>
+
+    <Grid Background="WhiteSmoke">
+        <StackPanel Orientation="Horizontal" Margin="0,57,0,-57" HorizontalAlignment="Center">
+            <Image x:Name="homeImage" Source="/Assets/homeSelected.png" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="21" PointerPressed="home_Click"/>
+            <TextBlock Name="home_text" Foreground="black" Text=" Home" FontSize="20"  PointerPressed="home_Click"/>
+            <TextBlock Text="" Width="30" />
+            <Image x:Name="connectImage" Source="/Assets/connect.png" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="21" PointerPressed="connect_Click"/>
+            <TextBlock Name="connect_text" Foreground="black" Text=" Connect" FontSize="20" PointerPressed="connect_Click"/>
+            <TextBlock Text="" Width="30" />
+            <Image Margin="2,2,2,2" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="25" Source="Assets/newTweet.png" PointerPressed="openWindowNewTweet"/>
+            <TextBlock Name="newtweet_text" Foreground="black" Text=" Tweet" FontSize="20" PointerPressed="openWindowNewTweet"/>
+        </StackPanel>
+        
+        <Grid Name="accountinfogridview" Margin="10,144,1157,45">
+            <StackPanel>
+                <TextBlock x:Name="myScreenName" Foreground="Black" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                <Image x:Name="myAvatar" Source="" Height="160" Width="160"/>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel HorizontalAlignment="Center" Width="60">
+                        <TextBlock Name="paneltweets" Visibility="Collapsed" HorizontalAlignment="Center" Foreground="Black" Text="Tweets" FontSize="12"/>
+                        <TextBlock x:Name="myTweets" HorizontalAlignment="Center" Foreground="Black" Text=""/>
+                    </StackPanel>
+                    <StackPanel  HorizontalAlignment="Center" Width="60">
+                        <TextBlock Name="panelfollowings" Visibility="Collapsed" HorizontalAlignment="Center" Foreground="Black" Text="Following" FontSize="12"/>
+                        <TextBlock x:Name="myFollowing" HorizontalAlignment="Center" Foreground="Black" Text=""/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Width="60">
+                        <TextBlock Name="panelfollowers" Visibility="Collapsed" HorizontalAlignment="Center" Foreground="Black" Text="Followers" FontSize="12"/>
+                        <TextBlock x:Name="myFollowers" HorizontalAlignment="Center" Foreground="Black" Text=""/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        
+        <Grid Visibility="Collapsed" Margin="20,400,0,0" Width="Auto" HorizontalAlignment="Left">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Height="40">
+                    <Image VerticalAlignment="Top" Name="replyicon" Source="/Assets/replyicon.png" Width="13" Height="10" HorizontalAlignment="Left" Visibility="Collapsed" />
+                    <TextBlock Text="    " />
+                    <TextBlock VerticalAlignment="Top" Name="replyscreenname" Text="" FontSize="13" HorizontalAlignment="Right" Foreground="Black" FontWeight="Bold" />
+                </StackPanel>
+                <TextBox Name="tweetbox2" Height="170" Width="172" Text="" AcceptsReturn="True" TextWrapping="Wrap" BorderBrush="Black" />
+                <TextBlock Name="charactersleft_" FontSize="16" FontWeight="Bold" Text="140" Foreground="Green" HorizontalAlignment="Right" />
+                <Border BorderBrush="Gray" BorderThickness="2" Grid.Row="0">
+                    <TextBlock Name="sendtweettextblock"  Text="" HorizontalAlignment="Center" Foreground="Black" PointerPressed="sendTweet_Click" FontSize="18" />
+                </Border>
+                <TextBlock Name="tweetstatus" Text="" FontSize="16" Foreground="Black" HorizontalAlignment="Right" />
+            </StackPanel>
+        </Grid>
+
+
+        <Grid Name="trendsgridview" Visibility="Visible" Margin="20,400,0,0" Width="Auto" Height="300" HorizontalAlignment="Left">
+            <StackPanel>
+                <TextBlock Name="trendingtopicstext" Visibility="Collapsed" Text="Trending Topics" Foreground="Black" FontWeight="Bold" FontSize="17"/>
+                
+                <TextBlock Name="trend1" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                <TextBlock Name="trend2" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                <TextBlock Name="trend3" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                <TextBlock Name="trend4" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                <TextBlock Name="trend5" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                <TextBlock Name="trend6" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                <TextBlock Name="trend7" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                <TextBlock Name="trend8" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                <TextBlock Name="trend9" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                <TextBlock Name="trend10" Text="" Foreground="#6D9EAF" FontSize="15" PointerPressed="searchTrend_PointerPressed"/>
+                
+            </StackPanel>
+        </Grid>
+
+        <Grid Name="loadinggrid">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                <!--<Image Source="Assets/loadingAnimation.gif" Width="200" Height="200" />-->
+                <ProgressRing x:Name="loadingring" Width="200" Height="200" Foreground="#FFC9C7C7" />
+                <!--<StackPanel VerticalAlignment="Center">
+                    <TextBlock Name="loadingtext" Foreground="Black" Text="Loading..." FontSize="30"/>
+                </StackPanel>-->
+            </StackPanel>
+        </Grid>
+
+        <GridView Name="timelinegridview" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollMode="Enabled" Margin="234,144,0,45">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Background="{Binding viewed, Converter={StaticResource secondkey}}"  >
+                        <StackPanel Orientation="Horizontal" Height="75">
+                            <Image Source="{Binding ProfileImageUrl}" Height="70" Width="70" HorizontalAlignment="Left" />
+                            <TextBlock Text=" " />
+                            <StackPanel>
+                                <TextBlock Text="{Binding Text, Converter={StaticResource thirdkey}}" Width="300" FontSize="13" Foreground="Black" TextWrapping="Wrap" />
+                                <TextBlock VerticalAlignment="Bottom" Text="{Binding CreatedAt, Converter={StaticResource firstkey}}" FontSize="13" Foreground="Gray"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+
+        <!--<Grid Name="newtweetbuttongrid" Margin="1188,55,149,684" Background="#2E80BB">
+            <Image Margin="2,2,2,2" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="25" Source="Assets/newTweet.png" PointerPressed="openWindowNewTweet"/>
+        </Grid>-->
+
+        <Grid Name="graygridoverlay" Background="gray" Opacity="0.5" Visibility="Collapsed" PointerPressed="closeNewTweetWindow"></Grid>
+    
+        <Grid Name="newtweetgrid" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="205" Background="#F2F2F2" Opacity="1">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <StackPanel>
+                    <Grid Background="#CCCCCC" Opacity="1">
+                        <StackPanel>
+                            <TextBlock Name="whatshappening" Foreground="Black" FontSize="18" Text="" HorizontalAlignment="Center" />
+                        </StackPanel>
+                    </Grid>
+                    <TextBlock FontSize="4" />
+                    <ProgressBar Name="loadingbar" Background="Transparent" />
+                    <TextBlock FontSize="4" />
+                    <Border Name="tweetboxborder" BorderBrush="#56B4EF" BorderThickness="1" Width="470" Height="120">
+                        <!--<TextBox Width="470" Height="120" />-->
+                        <TextBox Name="tweetbox" Height="120" Width="470" Text="" AcceptsReturn="True" TextWrapping="Wrap" BorderBrush="DarkGray" TextChanged="updateCharactersLeft_TextChange" />
+                    </Border>
+                    <TextBlock FontSize="10" />
+                    <Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Width="20"/>
+                            <CheckBox Name="multipletweets" Visibility="Visible" Content="" Foreground="Black" VerticalAlignment="Stretch" Click="multipletweets_click"/>
+                            <TextBlock Name="newtweetspace" Width="200"/>
+                            <TextBlock Name="charactersleft" FontSize="16" FontWeight="Bold" Text="140" Foreground="Green" VerticalAlignment="Center" />
+                            <TextBlock Width="20"/>
+                            <Grid Background="#059DD4">
+                                <TextBlock Text="Twittear" Foreground="White" FontSize="15" Width="70" TextAlignment="Center" VerticalAlignment="Center" PointerPressed="sendTweet_Click" />
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <Grid Name="aboutpage" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="400" Background="#F2F2F2" Opacity="1">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <StackPanel>
+                    <Grid Background="#CCCCCC" Opacity="1">
+                        <StackPanel>
+                            <TextBlock Foreground="Black" FontSize="18" Text="About" HorizontalAlignment="Center" />
+                        </StackPanel>
+                    </Grid>
+                    <TextBlock FontSize="4" />
+                    <ProgressBar Background="Transparent" />
+                    <TextBlock FontSize="4" />
+                    <TextBlock Name="abouttext" Height="332" Width="470" Text="" Foreground="Black" FontSize="15" TextWrapping="Wrap" Margin="14,0" />
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <Grid>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <TextBlock Name="orientationtext" Text="" FontSize="15" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" PointerPressed="changeOrientation_PointerPressed" />
+            </Border>
+        </Grid>
+
+        <Grid>
+            <TextBlock Name="about" Text="About" FontSize="15" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top" PointerPressed="aboutPage_PointerPressed" />
+        </Grid>
+
+    </Grid>
+
+
+</Page>
+    
+    

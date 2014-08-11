@@ -1,0 +1,16 @@
+Assets\connect.png
+Assets\connectSelected.png
+Assets\home.png
+Assets\homeSelected.png
+Assets\loadingAnimation.gif
+Assets\Logo.png
+Assets\newTweet.png
+Assets\replyicon.png
+Assets\SmallLogo.png
+Assets\SplashScreen.png
+Assets\StoreLogo.png
+App.xaml
+Common\StandardStyles.xaml
+MainPage.xaml
+OAuthPage.xaml
+TimeLinePage.xaml
